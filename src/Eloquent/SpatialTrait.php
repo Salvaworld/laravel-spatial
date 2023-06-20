@@ -333,21 +333,20 @@ trait SpatialTrait
      *
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    public function scopeComparison(EloquentBuilder $query, $geometryColumn, Geometry $geometry, $relationship): EloquentBuilder
-    {
+    public function scopeComparison(EloquentBuilder $query, $geometryColumn, Geometry $geometry, $relationship): EloquentBuilder {
         if ($this->isColumnAllowed($geometryColumn)) {
             $relationship = ucfirst(strtolower($relationship));
-
+            
             if (!in_array($relationship, $this->stRelations, true)) {
                 throw new UnknownSpatialRelationFunction($relationship);
             }
-
+            
             $geometryColumn .= $this->getConnection() instanceof PostgresConnection ? '::geometry' : '';
-            $query->whereRaw("ST_{$relationship}(`{$geometryColumn}`, ST_GeomFromText(?))", [
+            $query->whereRaw("ST_{$relationship}({$geometryColumn}, ST_GeomFromText(?))", [
                 $this->toWkt($geometry),
             ]);
         }
-
+        
         return $query;
     }
 

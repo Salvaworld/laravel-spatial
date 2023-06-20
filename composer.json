@@ -1,32 +1,28 @@
 {
-  "name": "danhunsaker/laravel-spatial",
+  "name": "salvaworld/laravel-spatial",
   "description": "Spatial data types extension for Laravel.",
   "type": "library",
   "license": "MIT",
   "authors": [
     {
-      "name": "Johannes Berdin",
-      "email": "ich@johannesberdin.de"
-    },
-    {
-      "name": "Dan Hunsaker",
-      "email": "danhunsaker@gmail.com"
+      "name": "Salva Tech",
+      "email": "tech@salvaworld.com"
     }
   ],
   "require": {
-    "php": "^7.4 || ^8.0",
-    "doctrine/dbal": "^2.5 || ^3.0",
+    "php": "^8.2",
+    "doctrine/dbal": "^3.5",
     "funiq/geophp": "dev-master",
-    "illuminate/database": "^8.0",
-    "jmikola/geojson": "^1.0",
+    "illuminate/database": "^10.10",
+    "jmikola/geojson": "^1.1.2",
     "ext-pdo": "*",
     "ext-json": "*"
   },
   "require-dev": {
-    "laravel/laravel": "^8.0",
-    "mockery/mockery": "^1.0",
-    "phpunit/phpunit": "^8.5 || ^9",
-    "squizlabs/php_codesniffer": "^3.5"
+    "laravel/laravel": "^10.10",
+    "mockery/mockery": "^1.6.2",
+    "phpunit/phpunit": "^10.2.2",
+    "squizlabs/php_codesniffer": "^3.7.2"
   },
   "autoload": {
     "psr-4": {

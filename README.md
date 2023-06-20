@@ -19,7 +19,7 @@ This package is fully undocumented and unstable, and is a combination of the two
 Installation made super-easy with [composer](https://getcomposer.org):
 
 ```bash
-composer require danhunsaker/laravel-spatial
+composer require salvaworld/laravel-spatial
 ```
 
 ## Requirements
