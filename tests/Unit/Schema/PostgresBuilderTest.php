@@ -4,7 +4,6 @@ namespace Tests\Unit\Schema;
 
 use LaravelSpatial\PostgresConnection;
 use LaravelSpatial\Schema\Blueprint;
-use LaravelSpatial\Schema\PostgresBuilder;
 use Mockery;
 use Tests\Unit\BaseTestCase;
 use Tests\Unit\Stubs\PostgresBuilderStub;

@@ -6,7 +6,6 @@ use Illuminate\Container\Container;
 use Illuminate\Database\SQLiteConnection;
 use LaravelSpatial\MysqlConnection;
 use LaravelSpatial\PostgresConnection;
-use Mockery;
 use Tests\Unit\BaseTestCase;
 use Tests\Unit\Stubs\ConnectionFactoryStub;
 use Tests\Unit\Stubs\PDOStub;

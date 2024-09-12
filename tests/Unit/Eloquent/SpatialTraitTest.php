@@ -20,7 +20,6 @@ use LaravelSpatial\Eloquent\SpatialTrait;
 use LaravelSpatial\Exceptions\SpatialFieldsNotDefinedException;
 use LaravelSpatial\MysqlConnection;
 use Mockery;
-use PDO;
 use PDOStatement;
 use Tests\Unit\BaseTestCase;
 use Tests\Unit\Stubs\PDOStub;
